@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Geuss The Number</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body
+    class="bg-[#1F305E] text-white flex items-center justify-center h-screen"
+  >
+    <mian>
+      <ul class="flex items-center gap-4" id="entered_numbers"></ul>
+      <h1 class="text-3xl font-semibold">
+        Geuss The Number Between <span id="min_value"></span> to
+        <span id="max_value"></span>.
+      </h1>
+      <p class="text-xl my-3 text-[teal]" id="hint"></p>
+      <input
+        type="number"
+        id="number_input"
+        autofocus
+        placeholder="Write your geussing number"
+        class="py-2 px-4 w-[500px] rounded-md my-5 text-2xl outline-0 bg-transparent border border-gray-700 focus:border-blue-400"
+      />
+      <p class="text-2xl uppercase tracking-wider my-5">
+        Chance left: <span class="text-green-500" id="chance_left"></span>
+      </p>
+      <button class="border block py-2 px-5 text-2xl rounded-md" id="geuss_btn">
+        Geuss
+      </button>
+      <button
+        class="border block py-2 px-5 text-2xl rounded-md hidden"
+        id="reset_btn"
+      >
+        Restart
+      </button>
+    </mian>
+    <script src="main.js"></script>
+  </body>
+</html>
